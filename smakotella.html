@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ароматна кав'ярня</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навігація -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-coffee"></i>
+                    Ароматна кав'ярня
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Герой секція -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Ласкаво просимо до <span class="highlight">Ароматної кав'ярні</span></h1>
+            <p>Де кожна чашка кави - це мистецтво, а кожен десерт - насолода. Насолоджуйтесь найкращими смаками у затишній атмосфері.</p>
+            <a href="#menu" class="btn">Переглянути меню</a>
+        </div>
+    </section>
+
+    <!-- Меню -->
+    <section id="menu">
+        <div class="container">
+            <h2>Наше меню</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Все меню</button>
+                <button class="category-btn" data-category="coffee">Кава</button>
+                <button class="category-btn" data-category="tea">Чай</button>
+                <button class="category-btn" data-category="desserts">Десерти</button>
+                <button class="category-btn" data-category="breakfast">Сніданки</button>
+            </div>
+            
+            <div class="menu-items">
+                <!-- Кава -->
+                <div class="menu-item" data-category="coffee">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Еспресо">
+                    <div class="menu-item-content">
+                        <h3>Еспресо <span class="price">45 грн</span></h3>
+                        <p>Класичний міцний еспресо зі свіжообжарених зерен.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=699&q=80" alt="Капучино">
+                    <div class="menu-item-content">
+                        <h3>Капучино <span class="price">65 грн</span></h3>
+                        <p>Еспресо з гарячим молоком та ніжною молочною пінкою.</p>
+                    </div>
+                </div>
+                
+                <!-- Чай -->
+                <div class="menu-item" data-category="tea">
+                    <img src="https://images.unsplash.com/photo-1567337710282-00832e0dfd98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Зелений чай">
+                    <div class="menu-item-content">
+                        <h3>Зелений чай <span class="price">50 грн</span></h3>
+                        <p>Ароматний зелений чай з японських плантацій.</p>
+                    </div>
+                </div>
+                
+                <!-- Десерти -->
+                <div class="menu-item" data-category="desserts">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Тірамісу">
+                    <div class="menu-item-content">
+                        <h3>Тірамісу <span class="price">85 грн</span></h3>
+                        <p>Класичний італійський десерт з кави, маскарпоне та какао.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="desserts">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="Чізкейк">
+                    <div class="menu-item-content">
+                        <h3>Чізкейк Нью-Йорк <span class="price">90 грн</span></h3>
+                        <p>Ніжний чізкейк зі шматочками білого шоколаду.</p>
+                    </div>
+                </div>
+                
+                <!-- Сніданки -->
+                <div class="menu-item" data-category="breakfast">
+                    <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Сніданок">
+                    <div class="menu-item-content">
+                        <h3>Повний сніданок <span class="price">120 грн</span></h3>
+                        <p>Яєчня, бекон, сосиски, гриби, помідори та тости.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="breakfast">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Вівсянка">
+                    <div class="menu-item-content">
+                        <h3>Вівсянка з фруктами <span class="price">75 грн</span></h3>
+                        <p>Вівсянка з ягодами, бананом, медом та горіхами.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Про нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Про наше кафе</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Наша історія</h3>
+                    <p>Ароматна кав'ярня відкрилася у 2010 році з метою нагодувати місто найсмачнішою кавою та створити затишне місце для зустрічей.</p>
+                    <p>Ми обираємо тільки найкращі зерна з етичних джерел, обсмажуємо їх на власній маленькій обсмажувальній машині та готуємо кожну чашку з любов'ю.</p>
+                    <p>Наша команда баристів пройшла навчання у найкращих кавових школах Європи та завжди рада порадити вам ідеальний напій.</p>
+                    <a href="#contact" class="btn">Відвідати нас</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Інтер'єр кав'ярні">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакти та години роботи</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Адреса</h3>
+                    <p>вул. Кавова, 10<br>м. Київ, 01001</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Телефон</h3>
+                    <p>+38 (044) 123-45-67</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@aromakava.com.ua</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Години роботи</h3>
+                    <ul class="hours">
+                        <li><span>Пн-Пт:</span> <span>8:00 - 22:00</span></li>
+                        <li><span>Субота:</span> <span>9:00 - 23:00</span></li>
+                        <li><span>Неділя:</span> <span>9:00 - 21:00</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ароматна кав'ярня</h3>
+                    <p>Де кожна чашка кави - це мистецтво, а кожен десерт - насолода.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Швидкі посилання</h3>
+                    <a href="#home">Головна</a>
+                    <a href="#menu">Меню</a>
+                    <a href="#about">Про нас</a>
+                    <a href="#contact">Контакти</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакти</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> вул. Кавова, 10, Київ</p>
+                    <p><i class="fas fa-phone"></i> +38 (044) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@aromakava.com.ua</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Ароматна кав'ярня. Всі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
